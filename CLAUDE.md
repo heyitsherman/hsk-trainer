@@ -72,7 +72,9 @@ Also do not port prose from the course page (`mandarin-to-hsk-3-threshold.html`)
 ## Workflow
 
 - One PRD §14 task at a time; meet its acceptance criteria; commit with the task number.
-- `tools/generate-audio.py` is run by the owner on their GPU. Never run it.
+- `tools/generate-audio.py` runs on the owner's GPU (`.venv`, CUDA torch). Run it only when the owner asks;
+  first full run done 2026-10-17 at the owner's request. It skips existing files; delete `public/audio/*.opus`
+  to regenerate. Default Opus level 0.93 ≈ 24 kbps.
 - Hosting: interim GitHub Pages at https://heyitsherman.github.io/hsk-trainer/ via `.github/workflows/pages.yml`
   (`BASE_PATH=/hsk-trainer/`). Cloudflare Pages (task 13 proper) and sync (task 14) are deferred until the
   owner has an account; Cloudflare builds with the default base `/`.

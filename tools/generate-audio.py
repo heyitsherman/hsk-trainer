@@ -100,7 +100,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--voice', default='zf_001')
     ap.add_argument('--speed', type=float, default=0.9, help='slightly slow for learners')
-    ap.add_argument('--compression', type=float, default=0.6, help='libsndfile Opus compression level 0..1')
+    # libsndfile maps level 0..1 roughly linearly onto ~256..6 kbps; 0.93 ≈ 24 kbps (PRD §7.3, ~8 MB total).
+    ap.add_argument('--compression', type=float, default=0.93, help='libsndfile Opus compression level 0..1')
     ap.add_argument('--limit', type=int, default=0, help='generate at most N missing files')
     ap.add_argument('--device', default=None, help="'cuda' or 'cpu' (default: auto)")
     args = ap.parse_args()
@@ -116,10 +117,9 @@ def main():
 
     items = json.loads(MANIFEST.read_text(encoding='utf-8'))
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    todo = [it for it in items if not (OUT_DIR / it['file']).exists()]
-    if args.limit:
-        todo = todo[:args.limit]
-    print(f'{len(items)} in manifest, {len(items) - len(todo)} already present, generating {len(todo)}')
+    missing = [it for it in items if not (OUT_DIR / it['file']).exists()]
+    todo = missing[:args.limit] if args.limit else missing
+    print(f'{len(items)} in manifest, {len(items) - len(missing)} already present, generating {len(todo)}')
     if not todo:
         return
 
