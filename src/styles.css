@@ -406,3 +406,155 @@ textarea {
     animation: none !important;
   }
 }
+
+/* ---------- curate ---------- */
+
+h2 {
+  font-size: 1.3rem;
+  margin: 12px 0;
+}
+
+h3 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 24px 0 8px;
+}
+
+.row-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.weeks {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+}
+
+.week-chip {
+  border-radius: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+
+.week-chip.done {
+  color: var(--accent);
+}
+
+.week-chip.active {
+  border-color: var(--accent);
+  background: var(--surface-2);
+}
+
+.week-chip:disabled {
+  opacity: 0.3;
+}
+
+.word-list {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.word-row {
+  display: grid;
+  grid-template-columns: 3.5em 6em 1fr 1.5em;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  min-height: 52px;
+}
+
+.zh-sm {
+  font-size: 1.3rem;
+}
+
+.pinyin-sm {
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.gloss {
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tick {
+  color: var(--accent);
+  text-align: right;
+}
+
+.link {
+  color: var(--accent);
+  padding: 0;
+}
+
+.word-head {
+  text-align: center;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.word-form .defs {
+  text-align: center;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.choice {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 48px 12px 14px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.choice.selected {
+  border-color: var(--accent);
+}
+
+.choice input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.choice .zh {
+  font-size: 1.25rem;
+}
+
+.choice .replay {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  min-width: 44px;
+}
+
+.choice input:not([type='radio']) {
+  margin-top: 6px;
+}
+
+.wide {
+  width: 100%;
+  margin-top: 24px;
+}

@@ -71,7 +71,8 @@ function speak(text: string): void {
 /** Plays /audio/{file}; falls back to Web Speech (polyphones may be misread) if missing or unplayable. */
 export async function play(audioFile: string | undefined, text: string): Promise<void> {
   stopAudio();
-  if (audioFile && el) {
+  if (audioFile) {
+    el ??= new Audio(); // created inside the calling tap handler, so iOS allows it
     try {
       await playFile(`${import.meta.env.BASE_URL}audio/${audioFile}`);
       return;

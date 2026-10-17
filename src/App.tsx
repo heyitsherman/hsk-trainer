@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getSettings } from './db/queries';
 import { db } from './db/schema';
+import { Curate } from './screens/Curate';
 import { Review } from './screens/Review';
 import { Today } from './screens/Today';
 
@@ -26,7 +27,8 @@ export function App() {
     <div className="shell">
       <main className="screen">
         {screen === 'today' && <Today onStart={() => setScreen('review')} onCurate={() => setScreen('curate')} />}
-        {screen !== 'today' && <p className="muted">Coming next.</p>}
+        {screen === 'curate' && <Curate />}
+        {(screen === 'schedule' || screen === 'settings') && <p className="muted">Coming next.</p>}
       </main>
       <nav className="tabs">
         {TABS.map((t) => (

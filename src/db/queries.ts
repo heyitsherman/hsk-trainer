@@ -1,5 +1,55 @@
-import type { AppSettings } from '../types';
+import { newCard } from '../srs/scheduler';
+import type { ActivatedWord, AppSettings, Sentence, VocabEntry, WeekProgress } from '../types';
 import { db as defaultDb, type HskDb, type SettingsRow } from './schema';
+
+export const WEEKS = 12;
+
+export const emptyWeek = (week: number): WeekProgress => ({
+  week,
+  tasksCompleted: [],
+  assignmentText: '',
+  notesText: '',
+  curatedAt: null,
+  completedAt: null,
+});
+
+export async function getWeek(week: number, db: HskDb = defaultDb): Promise<WeekProgress> {
+  return (await db.weekProgress.get(week)) ?? emptyWeek(week);
+}
+
+export async function patchWeek(week: number, patch: Partial<WeekProgress>, db: HskDb = defaultDb): Promise<WeekProgress> {
+  return db.transaction('rw', db.weekProgress, async () => {
+    const next = { ...(await getWeek(week, db)), ...patch, week };
+    await db.weekProgress.put(next);
+    return next;
+  });
+}
+
+/** Progress-anchored (PRD §13): week N unlocks once week N−1's curation is complete. */
+export function unlockedThrough(weeks: WeekProgress[]): number {
+  const done = new Set(weeks.filter((w) => w.curatedAt !== null).map((w) => w.week));
+  let n = 1;
+  while (n < WEEKS && done.has(n)) n++;
+  return n;
+}
+
+/** Curation commit (PRD §10): ActivatedWord + recognition card, atomically. Re-saving keeps the card. */
+export async function activateWord(
+  entry: VocabEntry,
+  chosenSentence: Sentence | null,
+  userNote: string,
+  db: HskDb = defaultDb,
+  now = Date.now(),
+): Promise<void> {
+  await db.transaction('rw', db.activated, db.cards, async () => {
+    const prev = await db.activated.get(entry.id);
+    const row: ActivatedWord = { vocabId: entry.id, activatedAt: prev?.activatedAt ?? now, chosenSentence };
+    if (userNote.trim()) row.userNote = userNote.trim();
+    await db.activated.put(row);
+    const id = `${entry.id}:recognition`;
+    if (!(await db.cards.get(id))) await db.cards.put(newCard(id, entry.id, 'recognition', now));
+  });
+}
 
 const DAY = 86_400_000;
 export const NEW_CARD_LOCK_DAYS = 14;
