@@ -9,6 +9,7 @@ export interface Sentence {
   english: string;
   source: 'tatoeba' | 'user';
   tatoebaId?: number;
+  audioFile?: string; // pre-generated for Tatoeba candidates; user sentences use Web Speech
 }
 
 export interface VocabEntry {

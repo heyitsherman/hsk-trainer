@@ -1,0 +1,82 @@
+# Definition overrides: SELECT senses that already exist in CC-CEDICT or Wiktionary for this word's
+# reading. The build fails if a listed sense is not found verbatim in that pool, so nothing here is
+# authored text. Review aid: docs/vocab-review.md.
+# id	senses (separated by " | ", in display order, max 3)
+w-0146	you (informal, as opposed to courteous 您 (nín))
+w-0271	(of sb or sth) to be (located) at | (used before a verb to indicate an action in progress) | to exist; to be alive
+w-0082	can; to have the skill; to know how to | to be likely to; to be sure to | to meet; to get together
+w-0299	to do; to engage in; to hold (a party etc) | to make; to produce | to write; to compose
+w-0233	to think (about) | to desire; to want (to) | to miss (feel wistful about the absence of)
+w-0078	(joining two nouns) and; together with; with (Taiwan pr. [han4])
+w-0106	to come | hither (directional complement for motion toward the speaker, as in 回来 (huílai))
+w-0110	inside | interior | internal
+w-0102	can; may | can; to be able to | passable; well; not bad; all right; OK
+w-0063	to work (to be employed) | work (employment) | job (position)
+w-0206	too (much) | very | extremely
+w-0287	classifier for birds and certain animals, one of a pair, some utensils, vessels etc
+w-0062	company; firm; corporation
+w-0186	(duration of) time | (point in) time | free time; leisure; spare time
+w-0242	new | newly
+w-0149	year
+w-0091	to call | to be called | to shout
+w-0159	apple (fruit)
+w-0080	behind | after | later
+w-0083	train
+w-0131	which | how
+w-0114	mum (mom); mama
+w-0208	weather
+w-0236	hour
+w-0269	month | moon
+w-0037	television; TV; the small screen (the broadcasting medium) | television set; TV set
+w-0118	busy | to hurry | to rush
+w-0289	China (a country in Asia; capital: Beijing)
+w-0048	son
+w-0105	(coll.) classifier for money and currency units | classifier for pieces of cloth, cake, soap etc | lump; chunk; piece
+w-0049	two | 2
+w-0055	minute (unit of time) | 0.01 yuan (unit of money) | a point (in sports or games)
+w-0215	late | evening | night
+w-0023	to wear; to put on (clothes, shoes etc.) | to go through (e.g. a tunnel); to cross (e.g. a street) | to bore through; to pierce; to perforate
+w-0054	airplane; plane; aircraft | flight (timetabled journey made by an airplane)
+w-0180	few | less | to lack
+w-0169	hot (of weather) | heat | to warm up
+w-0153	daughter
+w-0027	university; college
+w-0045	I'm sorry; excuse me; I beg your pardon | to let (sb) down; to disappoint
+w-0296	character | word | letter
+w-0126	bread | baked good; roll; bun; pastry; cake
+w-0087	one's family or family members
+w-0040	thing; stuff; something
+w-0119	cat
+w-0034	(bound form) shop; store | inn; old-style hotel
+w-0050	cooked rice | meal
+w-0178	morning; a.m.
+w-0084	chicken egg
+w-0218	hey | hello?; yes? (greeting, used when responding to a call, such as a phone call)
+w-0073	good-looking; beautiful; pretty | interesting; good; worth seeing; worth reading
+w-0028	university student
+w-0074	pleasant-sounding; nice to the ears; euphonious
+w-0292	secondary school (including both junior high school and high school) | middle school
+w-0142	(bound form) male
+w-0238	primary school student
+w-0345	with | and (joining two nouns) | to follow closely
+w-0311	don't ...! | (bound form) other; another; different | to leave; to part (from)
+w-0453	classifier for people (honorific) | position | seat
+w-0388	tired | weary | to work hard
+w-0421	ball | ball game | match
+w-0491	just (at that time) | exactly | straight
+w-0315	ground transport station; bus station; bus stop; train station; train stop
+w-0467	eye; eyes
+w-0468	medicine | drug
+w-0411	bird
+w-0492	week | weekly | circle
+w-0380	to take an exam | to test | to check
+w-0409	(informal) grandma (paternal grandmother)
+w-0481	(bound form) right; right-hand side
+w-0499	left
+w-0427	to go up | used after a verb to indicate motion from nearby to further away
+w-0422	to let sb do sth | to have sb do sth | to permit
+w-0309	(followed by a noun and adjective) more {adj.} than {noun} | to compare
+w-0496	to walk; to get somewhere by foot
+w-0485	to exercise; to move about | sports; athletics; exercise; game
+w-0307	bag | package | to wrap
+w-0076	day of the month (e.g. 七号 (qīhào) "the 7th") | (after a numeral) number designation (e.g. 237号房间 (èrsānqīhàofángjiān) "Room 237") | (bound form) size; type; category (e.g. 五号电池 (wǔhàodiànchí))
