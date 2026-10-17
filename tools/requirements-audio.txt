@@ -1,0 +1,6 @@
+# tools/generate-audio.py — install torch separately (CUDA wheel), see the script's docstring.
+kokoro>=0.9.4
+misaki[zh]>=0.9.4
+soundfile>=0.12.1
+numpy
+pypinyin

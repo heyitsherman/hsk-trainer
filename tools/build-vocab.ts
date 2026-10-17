@@ -487,7 +487,8 @@ const entries: VocabEntry[] = ordered.map((j) => {
 const out = sampleWords ? entries.filter((e) => sampleWords.includes(e.simplified)) : entries;
 writeFileSync(outPath, JSON.stringify(out, null, 1) + '\n');
 if (!sampleWords) {
-  const unique = [...new Map(manifest.map((m) => [m.file, m])).values()];
+  const seen = new Set<string>();
+  const unique = manifest.filter((m) => !seen.has(m.file) && seen.add(m.file)); // word wins over identical sentence
   writeFileSync(MANIFEST, JSON.stringify(unique, null, 1) + '\n');
 }
 
