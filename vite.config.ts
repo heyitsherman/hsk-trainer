@@ -2,7 +2,11 @@ import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
+// '/' for a root host (Cloudflare Pages); '/hsk-trainer/' for GitHub Pages (set by the deploy workflow).
+const base = process.env.BASE_PATH ?? '/';
+
 export default defineConfig({
+  base,
   plugins: [
     react(),
     VitePWA({
@@ -17,8 +21,8 @@ export default defineConfig({
         lang: 'en',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: '/',
-        scope: '/',
+        start_url: base,
+        scope: base,
         background_color: '#111317',
         theme_color: '#111317',
         icons: [
