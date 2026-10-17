@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getSettings } from './db/queries';
 import { db } from './db/schema';
+import { InstallGate } from './install';
 import { Curate } from './screens/Curate';
 import { Review } from './screens/Review';
 import { Schedule } from './screens/Schedule';
@@ -27,6 +28,7 @@ export function App() {
 
   return (
     <div className="shell">
+      <InstallGate />
       <main className="screen">
         {screen === 'today' && <Today onStart={() => setScreen('review')} onCurate={() => setScreen('curate')} />}
         {screen === 'curate' && <Curate />}
