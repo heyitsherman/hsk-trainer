@@ -66,6 +66,9 @@ Also do not port prose from the course page (`mandarin-to-hsk-3-threshold.html`)
   S≥30 and audio S≥14; cloze ← production S≥14 and a chosen sentence containing the word. Default FSRS
   weights jump S ~11 → ~46 in one review, so independent thresholds would unlock everything at once.
 - New-card budget goes to recognition (newly activated words) first; ladder-spawned cards take the rest.
+- Offline audio is downloaded by the app into Cache Storage `audio-v1` (`src/audio/offline.ts`), resumable per
+  launch, and played from a blob URL. Do not put audio back in the SW precache: a ~1,640-file install is
+  all-or-nothing and failed in practice; Safari also rejects SW-served media without Range support.
 - Audio is pre-generated for every word and every candidate sentence (curation picks sentences after the
   build). User sentences fall back to Web Speech.
 

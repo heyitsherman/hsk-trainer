@@ -32,8 +32,10 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // All audio is precached: study happens offline underground (PRD §3.3).
-        globPatterns: ['**/*.{js,css,html,webmanifest,png,svg}', 'audio/*.opus'],
+        // App shell only. Audio (~1,640 files) is downloaded by the app into its own cache
+        // (src/audio/offline.ts): an all-or-nothing SW install of that size kept failing.
+        globPatterns: ['**/*.{js,css,html,webmanifest,png,svg}'],
+        globIgnores: ['audio/**'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         navigateFallback: 'index.html',
         cleanupOutdatedCaches: true,

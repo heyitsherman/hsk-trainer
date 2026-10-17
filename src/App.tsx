@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getSettings } from './db/queries';
 import { db } from './db/schema';
+import { syncOfflineAudio } from './audio/offline';
 import { InstallGate } from './install';
 import { Curate } from './screens/Curate';
 import { Review } from './screens/Review';
@@ -22,6 +23,10 @@ export function App() {
 
   useEffect(() => {
     void getSettings(db).then((s) => (document.documentElement.dataset.theme = s.theme));
+    void syncOfflineAudio(); // resumes every launch until all audio is on the device
+    const online = () => void syncOfflineAudio();
+    window.addEventListener('online', online);
+    return () => window.removeEventListener('online', online);
   }, []);
 
   if (screen === 'review') return <Review onExit={() => setScreen('today')} />;

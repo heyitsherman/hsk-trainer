@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { cachedAudioCount } from '../audio/player';
-import { vocab } from '../data/vocab';
+import { ALL_AUDIO, onAudioProgress, syncOfflineAudio } from '../audio/offline';
 import { exportBackup, exportMarkdown, importBackup, parseBackup } from '../db/backup';
 import { getSettings, isNewCardLimitLocked, NEW_CARD_LOCK_DAYS, updateSettings } from '../db/queries';
 import { db } from '../db/schema';
@@ -8,7 +7,6 @@ import type { AppSettings } from '../types';
 import { SaveIndicator } from '../ui';
 
 const DAY = 86_400_000;
-const AUDIO_TOTAL = new Set(vocab.flatMap((v) => [v.audioFile, ...v.candidateSentences.map((s) => s.audioFile)])).size;
 const stamp = () => new Date().toISOString().slice(0, 10);
 
 /**
@@ -54,6 +52,8 @@ export function Settings() {
   const [error, setError] = useState('');
   const picker = useRef<HTMLInputElement>(null);
 
+  useEffect(() => onAudioProgress((done) => setAudio(done)), []);
+
   useEffect(() => {
     void (async () => {
       const [settings, backup, md] = await Promise.all([getSettings(db), exportBackup(db), exportMarkdown(db)]);
@@ -64,7 +64,6 @@ export function Settings() {
         cards: backup.data.cards.length,
       });
       setStats(await recalibration());
-      setAudio(await cachedAudioCount());
     })();
   }, []);
 
@@ -165,7 +164,15 @@ export function Settings() {
         {' · '}Sync: not set up
       </p>
       <p className="muted small">
-        Offline audio: {audio ?? '…'} / {AUDIO_TOTAL} files{audio !== null && audio < AUDIO_TOTAL ? ' (still downloading, or an update is waiting: open Today with a connection)' : ''}
+        Offline audio: {audio ?? '…'} / {ALL_AUDIO.length} files
+        {audio !== null && audio < ALL_AUDIO.length && (
+          <>
+            {' · '}
+            <button className="link" onClick={() => void syncOfflineAudio()}>
+              {navigator.onLine ? 'download now' : 'needs a connection'}
+            </button>
+          </>
+        )}
       </p>
 
       <h3>Credits</h3>

@@ -3,9 +3,10 @@
 // One <audio> element is reused everywhere: iOS unlocks an element (not the page) on a user gesture,
 // so the first tap plays a silent clip on it and later src changes are allowed without a gesture.
 //
-// Files are fetched (the service worker answers from its precache) and played from a blob URL.
-// Pointing <audio> straight at the URL would make Safari send Range requests to the service worker,
-// and Safari refuses the full 200 response a precache returns, so offline audio would stay silent.
+// Files come from the app's audio cache (see offline.ts) and play from a blob URL. Pointing <audio>
+// at a URL a service worker answers makes Safari send Range requests and reject a full 200 reply.
+
+import { loadAudio } from './offline';
 
 let el: HTMLAudioElement | null = null;
 let unlocked = false;
@@ -67,9 +68,8 @@ function playSrc(src: string): Promise<void> {
   });
 }
 
-async function playFile(url: string, mine: number): Promise<void> {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`${res.status} ${url}`);
+async function playFile(file: string, mine: number): Promise<void> {
+  const res = await loadAudio(file);
   const blob = new Blob([await res.arrayBuffer()], { type: 'audio/ogg' });
   if (mine !== token) return; // superseded by a newer tap
   if (blobUrl) URL.revokeObjectURL(blobUrl);
@@ -95,22 +95,11 @@ export async function play(audioFile: string | undefined, text: string): Promise
   const mine = ++token;
   if (audioFile) {
     try {
-      await playFile(`${import.meta.env.BASE_URL}audio/${audioFile}`, mine);
+      await playFile(audioFile, mine);
       return;
     } catch (e) {
       console.warn(e);
     }
   }
   if (mine === token) speak(text);
-}
-
-/** How many audio files are available offline (any Cache Storage cache). */
-export async function cachedAudioCount(): Promise<number> {
-  if (!('caches' in window)) return 0;
-  let n = 0;
-  for (const name of await caches.keys()) {
-    const keys = await (await caches.open(name)).keys();
-    n += keys.filter((r) => /\/audio\/[0-9a-f]{40}\.opus/.test(r.url)).length;
-  }
-  return n;
 }

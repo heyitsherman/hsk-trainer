@@ -7,3 +7,4 @@ dev-dist/
 coverage/
 __pycache__/
 .venv/
+.playwright-mcp/
