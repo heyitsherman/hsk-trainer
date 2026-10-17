@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getSettings } from '../db/queries';
 import { db } from '../db/schema';
-import { applyPendingUpdate } from '../pwa';
+import { setSafeToUpdate } from '../pwa';
 import { loadQueue, nextDue } from '../srs/queue';
 import { formatDayTime } from '../ui';
 
@@ -16,7 +16,11 @@ export function Today({ onStart, onCurate }: { onStart: () => void; onCurate: ()
   const [s, setS] = useState<Summary | null>(null);
 
   useEffect(() => {
-    applyPendingUpdate(); // safe point to take a new version
+    setSafeToUpdate(true); // the one screen where a reload to a new version loses nothing
+    return () => setSafeToUpdate(false);
+  }, []);
+
+  useEffect(() => {
     (async () => {
       const settings = await getSettings(db);
       const [queue, activated, next] = await Promise.all([loadQueue(db, settings), db.activated.count(), nextDue(db)]);

@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import { cachedAudioCount } from '../audio/player';
+import { vocab } from '../data/vocab';
 import { exportBackup, exportMarkdown, importBackup, parseBackup } from '../db/backup';
 import { getSettings, isNewCardLimitLocked, NEW_CARD_LOCK_DAYS, updateSettings } from '../db/queries';
 import { db } from '../db/schema';
@@ -6,6 +8,7 @@ import type { AppSettings } from '../types';
 import { SaveIndicator } from '../ui';
 
 const DAY = 86_400_000;
+const AUDIO_TOTAL = new Set(vocab.flatMap((v) => [v.audioFile, ...v.candidateSentences.map((s) => s.audioFile)])).size;
 const stamp = () => new Date().toISOString().slice(0, 10);
 
 /**
@@ -46,6 +49,7 @@ export function Settings() {
   const [s, setS] = useState<AppSettings | null>(null);
   const [files, setFiles] = useState<{ json: File; md: File; cards: number } | null>(null);
   const [stats, setStats] = useState<Stats | null>(null);
+  const [audio, setAudio] = useState<number | null>(null);
   const [savedAt, setSavedAt] = useState<number | null>(null);
   const [error, setError] = useState('');
   const picker = useRef<HTMLInputElement>(null);
@@ -60,6 +64,7 @@ export function Settings() {
         cards: backup.data.cards.length,
       });
       setStats(await recalibration());
+      setAudio(await cachedAudioCount());
     })();
   }, []);
 
@@ -158,6 +163,9 @@ export function Settings() {
         Persistent storage:{' '}
         {s.persistGranted === null ? 'not requested yet' : s.persistGranted ? 'granted' : 'not granted, so keep exporting backups'}
         {' · '}Sync: not set up
+      </p>
+      <p className="muted small">
+        Offline audio: {audio ?? '…'} / {AUDIO_TOTAL} files{audio !== null && audio < AUDIO_TOTAL ? ' (still downloading, or an update is waiting: open Today with a connection)' : ''}
       </p>
 
       <h3>Credits</h3>

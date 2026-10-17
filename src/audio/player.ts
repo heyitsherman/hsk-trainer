@@ -1,9 +1,17 @@
 // Cached pre-generated file first, Web Speech fallback (PRD §9.4).
-// One <audio> element is reused for the whole session: iOS unlocks an element (not the page) on a
-// user gesture, so the first tap plays a silent clip on it and every later src change is allowed.
+//
+// One <audio> element is reused everywhere: iOS unlocks an element (not the page) on a user gesture,
+// so the first tap plays a silent clip on it and later src changes are allowed without a gesture.
+//
+// Files are fetched (the service worker answers from its precache) and played from a blob URL.
+// Pointing <audio> straight at the URL would make Safari send Range requests to the service worker,
+// and Safari refuses the full 200 response a precache returns, so offline audio would stay silent.
 
 let el: HTMLAudioElement | null = null;
+let unlocked = false;
 let silentUrl: string | null = null;
+let blobUrl: string | null = null;
+let token = 0; // newest play() wins if taps overlap
 
 function silentWav(): string {
   const samples = 800; // 0.1 s at 8 kHz, 16-bit mono
@@ -31,6 +39,7 @@ export function unlockAudio(): void {
   silentUrl ??= silentWav();
   el.src = silentUrl;
   el.play().catch(() => {});
+  unlocked = true;
   if ('speechSynthesis' in window) {
     const u = new SpeechSynthesisUtterance(' ');
     u.volume = 0;
@@ -43,19 +52,29 @@ export function stopAudio(): void {
   if ('speechSynthesis' in window) speechSynthesis.cancel();
 }
 
-function playFile(url: string): Promise<void> {
+function playSrc(src: string): Promise<void> {
   const a = el!;
   return new Promise((resolve, reject) => {
     const done = (ok: boolean) => {
       a.onplaying = a.onerror = null;
       if (ok) resolve();
-      else reject(new Error(`audio failed: ${url}`));
+      else reject(new Error('audio element error'));
     };
     a.onplaying = () => done(true);
     a.onerror = () => done(false);
-    a.src = url;
+    a.src = src;
     a.play().catch(() => done(false));
   });
+}
+
+async function playFile(url: string, mine: number): Promise<void> {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`${res.status} ${url}`);
+  const blob = new Blob([await res.arrayBuffer()], { type: 'audio/ogg' });
+  if (mine !== token) return; // superseded by a newer tap
+  if (blobUrl) URL.revokeObjectURL(blobUrl);
+  blobUrl = URL.createObjectURL(blob);
+  await playSrc(blobUrl);
 }
 
 function speak(text: string): void {
@@ -70,15 +89,28 @@ function speak(text: string): void {
 
 /** Plays /audio/{file}; falls back to Web Speech (polyphones may be misread) if missing or unplayable. */
 export async function play(audioFile: string | undefined, text: string): Promise<void> {
+  // Called from a tap before the first await: unlock here if no session start did it yet (e.g. Curate).
+  if (!unlocked) unlockAudio();
   stopAudio();
+  const mine = ++token;
   if (audioFile) {
-    el ??= new Audio(); // created inside the calling tap handler, so iOS allows it
     try {
-      await playFile(`${import.meta.env.BASE_URL}audio/${audioFile}`);
+      await playFile(`${import.meta.env.BASE_URL}audio/${audioFile}`, mine);
       return;
     } catch (e) {
       console.warn(e);
     }
   }
-  speak(text);
+  if (mine === token) speak(text);
+}
+
+/** How many audio files are available offline (any Cache Storage cache). */
+export async function cachedAudioCount(): Promise<number> {
+  if (!('caches' in window)) return 0;
+  let n = 0;
+  for (const name of await caches.keys()) {
+    const keys = await (await caches.open(name)).keys();
+    n += keys.filter((r) => /\/audio\/[0-9a-f]{40}\.opus/.test(r.url)).length;
+  }
+  return n;
 }
