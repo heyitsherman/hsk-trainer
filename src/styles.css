@@ -605,3 +605,46 @@ h3 {
 .final-part {
   margin-bottom: 16px;
 }
+
+/* ---------- settings ---------- */
+
+.button-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 56px;
+  border-bottom: 1px solid var(--border);
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.stepper button {
+  width: 44px;
+  border-radius: 8px;
+  background: var(--surface-2);
+}
+
+.stepper span {
+  min-width: 2em;
+  text-align: center;
+}
+
+.error {
+  color: var(--again);
+}
+
+.credits a {
+  color: var(--accent);
+}
