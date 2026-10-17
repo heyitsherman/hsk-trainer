@@ -1,0 +1,387 @@
+[
+ {
+  "week": 1,
+  "title": "Sound before symbol",
+  "focus": "Pinyin, the four tones, and why tone accuracy is cheaper to build now than to repair later.",
+  "wordCount": 40,
+  "tasks": [
+   "Work through the full pinyin chart: every initial, every final, all four tones plus neutral",
+   "Drill the four tone contours in isolation until you can produce them on demand, not just recognize them",
+   "Drill tone pairs (2-3, 3-4, 4-4) — these break long before single tones do",
+   "Learn 3rd-tone sandhi and the 不 / 一 tone changes as rules, not exceptions",
+   "Record yourself saying 10 words; compare against native audio and note where you drift",
+   "Curate this week’s 40 words in the app"
+  ],
+  "resources": [
+   {
+    "label": "Pinyin chart with native audio",
+    "url": "https://studycli.org/pinyin-chart/"
+   },
+   {
+    "label": "Chinese for HSK 1 — Peking University (Coursera)",
+    "url": "https://www.coursera.org/learn/hsk-1"
+   },
+   {
+    "label": "Chinese Zero to Hero — HSK 1 playlist",
+    "url": "https://www.youtube.com/c/ChineseZeroToHero/playlists"
+   }
+  ],
+  "businessThread": "Mandarin names run family-name-first, and titles attach to the surname (王经理, not 经理王). Get this wrong in a first meeting and it registers. Learn the pattern now, before you have anyone to use it on.",
+  "fieldTask": "Spend 15 minutes at a hawker centre or coffee shop not ordering — just listening. Try to segment the stream into syllables. You will fail. That failure is the baseline you will measure week 12 against.",
+  "assignment": "Write out the five pinyin syllables you find hardest to produce, and for each one describe what your mouth is doing wrong. Then write your own name in pinyin with tone marks, and one sentence on which tone pair you expect to give you the most trouble and why."
+ },
+ {
+  "week": 2,
+  "title": "How characters are built",
+  "focus": "Radicals, stroke order, and phonetic components — the structure that makes 500 characters learnable instead of 500 arbitrary pictures.",
+  "wordCount": 45,
+  "tasks": [
+   "Learn the ~40 highest-frequency radicals and what semantic field each signals",
+   "Learn stroke order as a small rule set (top-to-bottom, left-to-right, horizontal-before-vertical, enclose-then-close)",
+   "Understand the semantic-phonetic compound: roughly 80% of characters follow it",
+   "Set up a pinyin IME on desktop and phone; type 20 words to confirm the loop works",
+   "Curate this week’s 45 words in the app"
+  ],
+  "resources": [
+   {
+    "label": "Chinese Grammar Wiki — A1 index",
+    "url": "https://resources.allsetlearning.com/chinese/grammar/"
+   },
+   {
+    "label": "Chinese Zero to Hero — character structure lessons",
+    "url": "https://www.youtube.com/c/ChineseZeroToHero/playlists"
+   },
+   {
+    "label": "Free app stack: Pleco, Anki, HelloChinese",
+    "url": "https://www.classcentral.com/report/best-chinese-learning-apps/"
+   }
+  ],
+  "businessThread": "公司 (company), 经理 (manager), 工作 (work). All three are transparent compounds once you can see components. Decompose them rather than memorizing them whole — the habit pays compound interest across the next 400 words.",
+  "fieldTask": "Photograph five Chinese shop signs on your commute. Identify at least one radical in each. You are not reading yet; you are learning to see structure where you previously saw noise.",
+  "assignment": "Pick three characters from this week and decompose each into its components. For each, state which component carries meaning and which (if any) carries sound. Then note one character where this analysis failed — the exceptions matter as much as the rule."
+ },
+ {
+  "week": 3,
+  "title": "Who you are",
+  "focus": "Identity, family, nationality, occupation — and the 是 / 有 / 在 distinction that beginners collapse and then spend months un-collapsing.",
+  "wordCount": 45,
+  "tasks": [
+   "Master pronoun + 是 + noun, and its negation with 不",
+   "Learn the 吗 yes/no question and the A-not-A question form; know when each is natural",
+   "Learn 的 for possession and modification — the single highest-frequency character in Mandarin",
+   "Separate 是 (identity), 有 (possession/existence), 在 (location). Write one sentence with each",
+   "Read two HSK 1 graded stories; underline every 的",
+   "Curate this week’s 45 words in the app"
+  ],
+  "resources": [
+   {
+    "label": "Chinese for HSK 1 — lessons 1–6",
+    "url": "https://www.coursera.org/learn/hsk-1"
+   },
+   {
+    "label": "ChineseGradedReader — HSK 1 stories",
+    "url": "https://chinesegradedreader.com/"
+   },
+   {
+    "label": "Grammar Wiki — A1 grammar points",
+    "url": "https://resources.allsetlearning.com/chinese/grammar/"
+   }
+  ],
+  "businessThread": "Build your professional self-introduction now and keep refining it every week: 我叫…，我在…工作，我是…。Three sentences. You will use this more than any other Mandarin you learn this year.",
+  "fieldTask": "Introduce yourself in Mandarin to one person — a colleague, a neighbor, a shopkeeper. Three sentences, then stop. The goal is initiating, not sustaining.",
+  "assignment": "Write your professional self-introduction in characters (no pinyin). Four to six sentences covering name, where you work, what you do, and one thing you are interested in. Then note which sentence you could not say aloud without reading it."
+ },
+ {
+  "week": 4,
+  "title": "Numbers, time, and money",
+  "focus": "The numeric system, measure words, dates and clock time — the densest concentration of immediately usable Mandarin in the entire course.",
+  "wordCount": 45,
+  "tasks": [
+   "Numbers 0–100, then the 万 (10,000) grouping that breaks English intuition",
+   "Learn 个 plus five common measure words; understand why 两 replaces 二 before them",
+   "Clock time, days of the week, months, dates — all follow big-to-small ordering",
+   "Prices and currency; practice hearing numbers at speed, not just reading them",
+   "Listen to one beginner podcast episode on shopping or ordering",
+   "Curate this week’s 45 words in the app"
+  ],
+  "resources": [
+   {
+    "label": "Chinese for HSK 1 — numbers and time",
+    "url": "https://www.coursera.org/learn/hsk-1"
+   },
+   {
+    "label": "Mandarin Bean — graded lessons with audio",
+    "url": "https://mandarinbean.com/all-lessons/"
+   },
+   {
+    "label": "Beginner podcast roundup",
+    "url": "https://www.hackingchinese.com/the-best-podcasts-for-learning-chinese/"
+   }
+  ],
+  "businessThread": "五万 is 50,000, not 5,000. Chinese groups large numbers in ten-thousands, so every figure above 9,999 needs a mental regrouping step. Mishearing this in a price discussion is the most expensive beginner error there is. Drill it until the conversion is automatic.",
+  "fieldTask": "Ask a price in Mandarin and understand the answer without asking for English. If you miss it, ask 多少钱? again rather than switching languages.",
+  "assignment": "Write five numbers in characters: your phone number, a price above 10,000, today’s date, a meeting time, and your age. Then explain in your own words how 万 changes the way you have to parse a large figure."
+ },
+ {
+  "week": 5,
+  "title": "Places and movement",
+  "focus": "Location, direction, transport, and the 在 / 去 / 来 frame that governs where things and people are.",
+  "wordCount": 45,
+  "tasks": [
+   "Location with 在 plus positional nouns (上面, 里面, 旁边)",
+   "Movement with 去 and 来; understand the speaker-relative logic",
+   "Transport with 坐 / 骑 / 开; ask and give simple directions",
+   "Learn the 这 / 那 / 哪 demonstrative set",
+   "Read three graded texts about places; note every 在",
+   "Curate this week’s 45 words in the app"
+  ],
+  "resources": [
+   {
+    "label": "HSKReading — beginner articles with audio",
+    "url": "https://hskreading.com/"
+   },
+   {
+    "label": "Grammar Wiki — A1 location and direction",
+    "url": "https://resources.allsetlearning.com/chinese/grammar/"
+   },
+   {
+    "label": "Chinese Zero to Hero — HSK 1 playlist",
+    "url": "https://www.youtube.com/c/ChineseZeroToHero/playlists"
+   }
+  ],
+  "businessThread": "Be able to say where your office is and how to get there: 我的公司在…，坐地铁到…站。 In Singapore this is genuinely usable the same week you learn it.",
+  "fieldTask": "Give directions in Mandarin to somewhere near you — the nearest MRT station, the nearest kopitiam. Say it aloud even if only to yourself.",
+  "assignment": "Write directions from your home to your workplace in characters, using at least three location or movement words from this week. Then note one thing you wanted to say and did not have the vocabulary for."
+ },
+ {
+  "week": 6,
+  "title": "Actions and completion",
+  "focus": "Verbs, objects, and aspect — 了 and 过. Mandarin marks completion and experience, not tense, and conflating the two is the most durable beginner error.",
+  "wordCount": 45,
+  "tasks": [
+   "Basic SVO patterns with 20 high-frequency verbs",
+   "了 for completed action; understand that it is aspect, not past tense",
+   "过 for experience (‘have ever done’) and how it contrasts with 了",
+   "Negation: why 不 and 没 are not interchangeable",
+   "Write ten sentences about yesterday; check each 了 against the Grammar Wiki entry",
+   "Curate this week’s 45 words in the app"
+  ],
+  "resources": [
+   {
+    "label": "Grammar Wiki — aspect particle 了",
+    "url": "https://resources.allsetlearning.com/chinese/grammar/"
+   },
+   {
+    "label": "Chinese for HSK 1 — verbs and aspect",
+    "url": "https://www.coursera.org/learn/hsk-1"
+   },
+   {
+    "label": "Mandarin Bean — HSK 1–2 texts",
+    "url": "https://mandarinbean.com/all-lessons/"
+   }
+  ],
+  "businessThread": "开会 (hold a meeting) and 收到 (received — the standard one-word acknowledgment in Chinese work chat). 收到 is arguably the single most useful piece of workplace Mandarin you will learn all course.",
+  "fieldTask": "Send one real message in Mandarin — to a colleague, a group chat, anywhere. Two sentences is enough. Typed, not handwritten.",
+  "assignment": "Write five sentences about what you did yesterday, using 了 correctly at least three times. Then write one sentence where you deliberately used 过 instead, and explain in English why 了 would have been wrong there."
+ },
+ {
+  "week": 7,
+  "title": "HSK 1 checkpoint",
+  "focus": "Consolidation at 300 words. Diagnose what is genuinely retained versus what only survives inside familiar sentences.",
+  "wordCount": 40,
+  "tasks": [
+   "Sit a full HSK 1 practice paper under timed conditions — no dictionary, no pausing audio",
+   "Score it honestly and classify every error: vocabulary, grammar, listening, or careless",
+   "Re-drill only the failed items; do not re-study material you already passed",
+   "Audit your reviews: if you hit the 60-card cap most days, lower new cards per day in Settings",
+   "Record a 60-second unscripted monologue about your week",
+   "Curate this week’s 40 words in the app"
+  ],
+  "resources": [
+   {
+    "label": "HSK 3.0 Level 1 vocabulary list (PDF)",
+    "url": "https://studycli.org/wp-content/uploads/2026/04/hsk-1-vocab-list-hsk-v3.pdf"
+   },
+   {
+    "label": "HSK 1 vocabulary flashcards",
+    "url": "https://studycli.org/chinese-tools/hsk-1-vocabulary/"
+   },
+   {
+    "label": "Official exam structure and dates",
+    "url": "https://www.chinesetest.cn/hsk"
+   }
+  ],
+  "businessThread": "Rehearse your self-introduction from week 3 again, unscripted this time. Compare it against what you wrote then. The gap is your actual progress; everything else is a proxy.",
+  "fieldTask": "Have one exchange in Mandarin that lasts more than two turns. Not a transaction — an exchange. Expect it to be uncomfortable.",
+  "assignment": "Report your HSK 1 practice score and break your errors into the four categories above. Which category dominated? State what you will change in weeks 8–12 as a result — one specific change, not a resolution to try harder."
+ },
+ {
+  "week": 8,
+  "title": "Comparison and degree",
+  "focus": "比 comparisons, degree adverbs, and adjectival predicates — where Mandarin stops needing 是 and beginners keep inserting it anyway.",
+  "wordCount": 40,
+  "tasks": [
+   "The 比 comparison structure and its negation with 没有",
+   "Degree adverbs: 很, 太, 非常, 有点儿 — and why 很 is often semantically empty",
+   "Adjectival predicates without 是; drill until omitting 是 feels natural",
+   "一样 and 跟…一样 for equivalence",
+   "Read two graded texts comparing things; extract every comparison structure",
+   "Curate this week’s 40 words in the app"
+  ],
+  "resources": [
+   {
+    "label": "Grammar Wiki — A2 comparison points",
+    "url": "https://resources.allsetlearning.com/chinese/grammar/"
+   },
+   {
+    "label": "ChineseGradedReader — HSK 2 stories",
+    "url": "https://chinesegradedreader.com/"
+   },
+   {
+    "label": "Chinese Zero to Hero — HSK 2 playlist",
+    "url": "https://www.youtube.com/c/ChineseZeroToHero/playlists"
+   }
+  ],
+  "businessThread": "Comparing options is most of early business talk: 这个比那个便宜 (this one is cheaper than that one). Build three comparison sentences about things you actually decide between at work.",
+  "fieldTask": "Compare two things aloud in Mandarin in a shop — price, size, color. Use 比 at least once with a real person present.",
+  "assignment": "Write four sentences comparing two options you have genuinely weighed recently — two products, two routes, two tools. Use 比 in at least two of them and 一样 in one."
+ },
+ {
+  "week": 9,
+  "title": "Ability, permission, obligation",
+  "focus": "会 / 能 / 可以 / 要 / 想 — the modal cluster. English collapses these into ‘can’ and ‘want’; Mandarin does not, and the distinctions carry real politeness weight.",
+  "wordCount": 40,
+  "tasks": [
+   "会 (learned ability) vs 能 (circumstantial ability) vs 可以 (permission)",
+   "要 (must/will) vs 想 (would like) — the difference between insisting and proposing",
+   "Polite request patterns: 请, 麻烦你, 可以…吗",
+   "Softening: 一下, 有点儿, and why blunt Mandarin reads worse than blunt English",
+   "Listen to one podcast episode and log every modal you catch",
+   "Curate this week’s 40 words in the app"
+  ],
+  "resources": [
+   {
+    "label": "Grammar Wiki — auxiliary verbs",
+    "url": "https://resources.allsetlearning.com/chinese/grammar/"
+   },
+   {
+    "label": "Beginner podcast roundup",
+    "url": "https://www.hackingchinese.com/the-best-podcasts-for-learning-chinese/"
+   },
+   {
+    "label": "Business Chinese phrases and etiquette",
+    "url": "https://studycli.org/learn-chinese/business-chinese-phrases-and-etiquette-for-beginners/"
+   }
+  ],
+  "businessThread": "Requests at work live entirely in this cluster. 可以…吗 and 麻烦你 are how you ask for something without sounding like you are issuing an instruction. Register matters more here than vocabulary size.",
+  "fieldTask": "Make one polite request in Mandarin using 可以…吗 or 麻烦你. Note how the other person responds — tone of reply is data.",
+  "assignment": "Write three requests you might realistically make at work, each at a different politeness level. Explain what makes the third more polite than the first, in terms of specific words rather than general feel."
+ },
+ {
+  "week": 10,
+  "title": "Time, sequence, and plans",
+  "focus": "Ordering events, talking about the future, and 的时候 / 以前 / 以后 — the scaffolding that turns isolated sentences into narrative.",
+  "wordCount": 40,
+  "tasks": [
+   "Time-when vs time-duration and their different positions in the sentence",
+   "以前 / 以后 / 的时候 for sequencing",
+   "就 and 才 for ‘sooner than expected’ vs ‘later than expected’",
+   "Future with 要…了 and 快…了",
+   "Narrate your last week in six connected sentences, aloud, without notes",
+   "Curate this week’s 40 words in the app"
+  ],
+  "resources": [
+   {
+    "label": "Grammar Wiki — A2 time and sequence",
+    "url": "https://resources.allsetlearning.com/chinese/grammar/"
+   },
+   {
+    "label": "Mandarin Bean — HSK 2 texts with audio",
+    "url": "https://mandarinbean.com/all-lessons/"
+   },
+   {
+    "label": "HSKReading — beginner to intermediate",
+    "url": "https://hskreading.com/"
+   }
+  ],
+  "businessThread": "Deadlines and scheduling: 下个星期三下午三点开会。 Being able to propose, confirm, and change a meeting time is a complete, self-contained business capability at this level.",
+  "fieldTask": "Read one article from 小拇指 or 大拇指 on zbSchools — Singapore student Chinese, pitched almost exactly at HSK 1–2. Local context, real register.",
+  "assignment": "Write a six-sentence account of your last working week using at least three sequencing expressions (以前, 以后, 的时候, 就, 还). Then rewrite the first sentence to describe next week instead."
+ },
+ {
+  "week": 11,
+  "title": "Working Mandarin",
+  "focus": "The dedicated business layer: titles, meeting language, and the written register of Chinese workplace messaging.",
+  "wordCount": 45,
+  "tasks": [
+   "Job titles, departments, and the surname-plus-title address convention",
+   "Meeting vocabulary: 开会, 讨论, 安排, 确认, 时间",
+   "Written register: how a work message differs from speech (shorter, more formal, 收到 as acknowledgment)",
+   "Exchange contacts and follow up: the WeChat-adding sequence as a fixed script",
+   "Type a 100-character work message; check every character with a dictionary before sending",
+   "Curate this week’s 45 words in the app"
+  ],
+  "resources": [
+   {
+    "label": "Business Chinese phrases and etiquette for beginners",
+    "url": "https://studycli.org/learn-chinese/business-chinese-phrases-and-etiquette-for-beginners/"
+   },
+   {
+    "label": "What to learn first in business Chinese",
+    "url": "https://www.echineselearning.com/blog/business-chinese-for-beginners-what-to-learn-first-and-what-can-wait"
+   },
+   {
+    "label": "Writing business emails and WeChat messages",
+    "url": "https://flexiclasses.com/mandarin/business-emails/"
+   }
+  ],
+  "businessThread": "This whole week is the business module. Be clear-eyed about the ceiling: at 470 words you can introduce yourself, schedule, confirm, and acknowledge. You cannot negotiate or present. That is a week-11 fact, not a failure.",
+  "fieldTask": "Send one work-register message in Mandarin to a real person. If your workplace has no natural recipient, write it to yourself and read it aloud — but sending it to someone who can correct you is worth far more.",
+  "assignment": "Write a workplace message of roughly 100 characters proposing a meeting: greeting, purpose, two proposed times, request for confirmation, sign-off. Then write two sentences on how it differs from how you would say the same thing out loud."
+ },
+ {
+  "week": 12,
+  "title": "Consolidation and HSK 3 diagnostic",
+  "focus": "Close the 500-word gap, sit an HSK 2 paper, and produce a specific gap list against HSK 3 rather than a vague sense of readiness.",
+  "wordCount": 30,
+  "tasks": [
+   "Sit a full HSK 2 practice paper, timed, no assistance",
+   "Cross-check your vocabulary against the HSK 3.0 Level 2 list; log every gap",
+   "Skim the HSK 3.0 Level 3 list and count how many words you already recognize — that number is your true starting position",
+   "Re-record the week-1 monologue task and compare the two recordings directly",
+   "Complete the final project (below)",
+   "Write your week 13–24 plan before this week ends, while the diagnostic is fresh"
+  ],
+  "resources": [
+   {
+    "label": "HSK 3.0 Level 2 vocabulary list (PDF)",
+    "url": "https://studycli.org/wp-content/uploads/2026/04/hsk-2-vocab-list-hsk-v3.pdf"
+   },
+   {
+    "label": "HSK 3.0 Levels 1–3 vocabulary spreadsheet",
+    "url": "https://docs.google.com/spreadsheets/d/1FEMFBiqNwZe4GJ9nKU93yYKZIBK0SY7bLddlWbn7BHk/edit?gid=2117979613#gid=2117979613"
+   },
+   {
+    "label": "Official HSK 3.0 syllabus (PDF, Chinese)",
+    "url": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+   }
+  ],
+  "businessThread": "Your self-introduction should now be fluent, unscripted, and roughly 45 seconds. Record it. This is the single most portable asset the course produces.",
+  "fieldTask": "One sustained Mandarin conversation, minimum five turns, with someone who is not obliged to be patient with you.",
+  "assignment": "Report your HSK 2 practice score. List the ten HSK 3.0 Level 2 words you failed to retain and your best guess at why each one did not stick. Then state, in one sentence, whether you are ready to begin HSK 3 — and defend the answer with evidence from this page rather than from how you feel.",
+  "finalProject": [
+   {
+    "title": "Spoken self-introduction — 2 to 3 minutes, unscripted",
+    "prompt": "Record yourself covering who you are, what you do, where you work, what you are interested in, and one thing you want to do next year. No notes, no reading. Then listen back and transcribe your own recording in characters — the transcription is where you will discover what you actually said versus what you thought you said."
+   },
+   {
+    "title": "One unscripted real transaction, in Singapore, in Mandarin",
+    "prompt": "Order, ask, buy, or arrange something entirely in Mandarin with someone who is not teaching you. Do not switch to English when it gets uncomfortable — the recovery is the part being tested. Then write up what happened: what worked, what failed, and what you could not say."
+   },
+   {
+    "title": "A ~150-character written work message",
+    "prompt": "Typed in characters, addressed to a Chinese-speaking colleague or counterpart. Greeting, purpose, two proposed meeting times, a request for confirmation, sign-off. Correct register — not a transcript of how you would say it aloud."
+   }
+  ]
+ }
+]

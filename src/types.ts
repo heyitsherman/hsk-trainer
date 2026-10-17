@@ -69,6 +69,20 @@ export interface WeekProgress {
   finalProject?: string[]; // week 12 only: the course page's three final-project parts
 }
 
+/** src/data/schedule.json: one per week, from the course page (handwriting removed, PRD §13.2). */
+export interface Module {
+  week: number;
+  title: string;
+  focus: string;
+  wordCount: number;
+  tasks: string[];
+  resources: { label: string; url: string }[];
+  businessThread: string;
+  fieldTask: string;
+  assignment: string;
+  finalProject?: { title: string; prompt: string }[];
+}
+
 export interface AppSettings {
   newCardsPerDay: number;
   dailyReviewCap: number;

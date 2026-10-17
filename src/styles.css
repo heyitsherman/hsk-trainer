@@ -558,3 +558,50 @@ h3 {
   width: 100%;
   margin-top: 24px;
 }
+
+/* ---------- schedule ---------- */
+
+.module p {
+  margin: 0 0 8px;
+}
+
+.tasks,
+.resources {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 10px 0;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.task input {
+  width: 22px;
+  height: 22px;
+  margin: 1px 0 0;
+  flex: none;
+  accent-color: var(--accent);
+}
+
+.task input:checked + span {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.resources a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.final-part {
+  margin-bottom: 16px;
+}

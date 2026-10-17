@@ -3,6 +3,7 @@ import { getSettings } from './db/queries';
 import { db } from './db/schema';
 import { Curate } from './screens/Curate';
 import { Review } from './screens/Review';
+import { Schedule } from './screens/Schedule';
 import { Today } from './screens/Today';
 
 type Screen = 'today' | 'review' | 'curate' | 'schedule' | 'settings';
@@ -28,7 +29,8 @@ export function App() {
       <main className="screen">
         {screen === 'today' && <Today onStart={() => setScreen('review')} onCurate={() => setScreen('curate')} />}
         {screen === 'curate' && <Curate />}
-        {(screen === 'schedule' || screen === 'settings') && <p className="muted">Coming next.</p>}
+        {screen === 'schedule' && <Schedule />}
+        {screen === 'settings' && <p className="muted">Coming next.</p>}
       </main>
       <nav className="tabs">
         {TABS.map((t) => (
