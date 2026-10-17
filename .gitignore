@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dev-dist/
+.sources/
+*.local
+.claude/settings.local.json
+coverage/
+__pycache__/
+.venv/

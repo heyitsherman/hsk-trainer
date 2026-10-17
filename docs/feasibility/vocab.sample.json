@@ -1,0 +1,725 @@
+[
+  {
+    "id": "w-0108",
+    "simplified": "了",
+    "pinyin": "le",
+    "pinyinNumbered": "le5",
+    "definitions": [
+      "(completed action marker)",
+      "(modal particle indicating change of state, situation now)",
+      "(modal particle intensifying preceding clause)"
+    ],
+    "hskLevel": 1,
+    "week": 1,
+    "partOfSpeech": "particle",
+    "audioFile": "0efe5c02dd646fb2a4f4de526ba7f0eb99def34a.opus",
+    "candidateSentences": [
+      {
+        "simplified": "她来了！",
+        "pinyin": "Tā lái le!",
+        "english": "She's coming!",
+        "source": "tatoeba",
+        "tatoebaId": 333982
+      },
+      {
+        "simplified": "太贵了！",
+        "pinyin": "Tài guì le!",
+        "english": "It's too expensive!",
+        "source": "tatoeba",
+        "tatoebaId": 399956
+      },
+      {
+        "simplified": "她笑了。",
+        "pinyin": "Tā xiào le.",
+        "english": "She smiled.",
+        "source": "tatoeba",
+        "tatoebaId": 5092276
+      }
+    ]
+  },
+  {
+    "id": "w-0225",
+    "simplified": "喜欢",
+    "pinyin": "xǐhuan",
+    "pinyinNumbered": "xi3 huan5",
+    "definitions": [
+      "to like; to be fond of",
+      "to be happy; to be pleased",
+      "to tend to"
+    ],
+    "hskLevel": 1,
+    "week": 1,
+    "partOfSpeech": "verb",
+    "audioFile": "0f9bb2a8d65b2c2d139439f2345e296f738fa437.opus",
+    "candidateSentences": [
+      {
+        "simplified": "我喜欢猫。",
+        "pinyin": "Wǒ xǐhuan māo.",
+        "english": "I like cats.",
+        "source": "tatoeba",
+        "tatoebaId": 382426
+      },
+      {
+        "simplified": "我喜欢吃。",
+        "pinyin": "Wǒ xǐhuan chī.",
+        "english": "I like to eat.",
+        "source": "tatoeba",
+        "tatoebaId": 1225693
+      },
+      {
+        "simplified": "我喜欢鱼。",
+        "pinyin": "Wǒ xǐhuān yú.",
+        "english": "I like fish.",
+        "source": "tatoeba",
+        "tatoebaId": 5551033
+      }
+    ]
+  },
+  {
+    "id": "w-0067",
+    "simplified": "还",
+    "pinyin": "hái",
+    "pinyinNumbered": "hai2",
+    "definitions": [
+      "still",
+      "still in progress",
+      "still more"
+    ],
+    "hskLevel": 1,
+    "week": 2,
+    "partOfSpeech": "adverb",
+    "audioFile": "1b3e12d4f7896c40c94791dc0c409239a64b2462.opus",
+    "candidateSentences": [
+      {
+        "simplified": "我还在看。",
+        "pinyin": "Wǒ hái zài kàn.",
+        "english": "I am still reading.",
+        "source": "tatoeba",
+        "tatoebaId": 5575198
+      },
+      {
+        "simplified": "他还在睡觉。",
+        "pinyin": "Tā hái zài shuìjiào.",
+        "english": "He is still in bed.",
+        "source": "tatoeba",
+        "tatoebaId": 9415195
+      },
+      {
+        "simplified": "你还认识我吗？",
+        "pinyin": "Nǐ hái rènshi wǒ ma?",
+        "english": "Do you know me?",
+        "source": "tatoeba",
+        "tatoebaId": 4835855
+      }
+    ]
+  },
+  {
+    "id": "w-0181",
+    "simplified": "谁",
+    "pinyin": "shéi",
+    "pinyinNumbered": "shei2",
+    "definitions": [
+      "who"
+    ],
+    "hskLevel": 1,
+    "week": 2,
+    "partOfSpeech": "pronoun",
+    "audioFile": "9c137d8dbc228100da6305f4c4910e0c56a5955b.opus",
+    "candidateSentences": [
+      {
+        "simplified": "他是谁？",
+        "pinyin": "Tā shì shéi?",
+        "english": "Who is he?",
+        "source": "tatoeba",
+        "tatoebaId": 347334
+      },
+      {
+        "simplified": "你是谁？",
+        "pinyin": "Nǐ shì shéi?",
+        "english": "Who are you?",
+        "source": "tatoeba",
+        "tatoebaId": 395853
+      },
+      {
+        "simplified": "她是谁？",
+        "pinyin": "Tā shì shéi?",
+        "english": "Who's she?",
+        "source": "tatoeba",
+        "tatoebaId": 4887707
+      }
+    ]
+  },
+  {
+    "id": "w-0033",
+    "simplified": "点",
+    "pinyin": "diǎn",
+    "pinyinNumbered": "dian3",
+    "definitions": [
+      "to touch briefly; to tap",
+      "to mark with a dot; to check off (on a list)",
+      "to order (food etc); to select"
+    ],
+    "hskLevel": 1,
+    "week": 2,
+    "partOfSpeech": "measure word, verb",
+    "audioFile": "ad2e0f420b28a17db978de6384f23905d34d58a0.opus",
+    "candidateSentences": [
+      {
+        "simplified": "开车慢点。",
+        "pinyin": "Kāichē màn diǎn.",
+        "english": "Drive slowly.",
+        "source": "tatoeba",
+        "tatoebaId": 5092212
+      },
+      {
+        "simplified": "写点什么。",
+        "pinyin": "Xiě diǎn shénme.",
+        "english": "Write something.",
+        "source": "tatoeba",
+        "tatoebaId": 5112388
+      },
+      {
+        "simplified": "她七点起床。",
+        "pinyin": "Tā qī diǎn qǐchuáng.",
+        "english": "She gets up at seven.",
+        "source": "tatoeba",
+        "tatoebaId": 743100
+      }
+    ]
+  },
+  {
+    "id": "w-0287",
+    "simplified": "只",
+    "pinyin": "zhī",
+    "pinyinNumbered": "zhi1",
+    "definitions": [
+      "grain that has begun to ripen",
+      "classifier for birds and certain animals, one of a pair, some utensils, vessels etc"
+    ],
+    "hskLevel": 1,
+    "week": 2,
+    "partOfSpeech": "measure word",
+    "audioFile": "6e128164c5f817c19560d564521b2e4e4bde6040.opus",
+    "candidateSentences": [
+      {
+        "simplified": "您有几只猫？",
+        "pinyin": "Nín yǒu jǐ zhī māo?",
+        "english": "How many cats do you have?",
+        "source": "tatoeba",
+        "tatoebaId": 4264866
+      },
+      {
+        "simplified": "我是一只猫。",
+        "pinyin": "Wǒ shì yī zhī māo.",
+        "english": "I'm a cat.",
+        "source": "tatoeba",
+        "tatoebaId": 8577716
+      },
+      {
+        "simplified": "我喜欢这只狗。",
+        "pinyin": "Wǒ xǐhuan zhè zhī gǒu.",
+        "english": "I like this dog.",
+        "source": "tatoeba",
+        "tatoebaId": 1785983
+      }
+    ]
+  },
+  {
+    "id": "w-0096",
+    "simplified": "觉得",
+    "pinyin": "juéde",
+    "pinyinNumbered": "jue2 de5",
+    "definitions": [
+      "to think that ...; to feel that ...",
+      "to feel (uncomfortable etc)"
+    ],
+    "hskLevel": 1,
+    "week": 2,
+    "partOfSpeech": "verb",
+    "audioFile": "e8a4b38b09899da18cdfbf24728fb410ff1d55a1.opus",
+    "candidateSentences": [
+      {
+        "simplified": "你觉得怎么样？",
+        "pinyin": "Nǐ juéde zěnmeyàng?",
+        "english": "What do you think of it?",
+        "source": "tatoeba",
+        "tatoebaId": 336719
+      },
+      {
+        "simplified": "你觉得这个怎么样？",
+        "pinyin": "Nǐ juéde zhège zěnmeyàng?",
+        "english": "What are your thoughts on this?",
+        "source": "tatoeba",
+        "tatoebaId": 8631087
+      },
+      {
+        "simplified": "我觉得你的工作可以。",
+        "pinyin": "Wǒ juéde nǐ de gōngzuò kěyǐ.",
+        "english": "I think your work is all right.",
+        "source": "tatoeba",
+        "tatoebaId": 333016
+      }
+    ]
+  },
+  {
+    "id": "w-0040",
+    "simplified": "东西",
+    "pinyin": "dōngxi",
+    "pinyinNumbered": "dong1 xi5",
+    "definitions": [
+      "thing",
+      "stuff",
+      "person"
+    ],
+    "hskLevel": 1,
+    "week": 2,
+    "partOfSpeech": "noun",
+    "audioFile": "87d3786fec0ce60c804b7f7a28687b39d1608bd8.opus",
+    "candidateSentences": [
+      {
+        "simplified": "你穿点东西。",
+        "pinyin": "Nǐ chuān diǎn dōngxi.",
+        "english": "Put on some clothes.",
+        "source": "tatoeba",
+        "tatoebaId": 8727932
+      },
+      {
+        "simplified": "这是什么东西？",
+        "pinyin": "Zhè shì shénme dōngxi?",
+        "english": "What the hell is this?",
+        "source": "tatoeba",
+        "tatoebaId": 380256
+      },
+      {
+        "simplified": "你想吃东西吗？",
+        "pinyin": "Nǐ xiǎng chī dōngxi ma?",
+        "english": "Do you want to eat?",
+        "source": "tatoeba",
+        "tatoebaId": 8730004
+      }
+    ]
+  },
+  {
+    "id": "w-0001",
+    "simplified": "爱",
+    "pinyin": "ài",
+    "pinyinNumbered": "ai4",
+    "definitions": [
+      "to love; to be fond of; to like",
+      "affection",
+      "to be inclined (to do sth); to tend to (happen)"
+    ],
+    "hskLevel": 1,
+    "week": 3,
+    "partOfSpeech": "verb",
+    "audioFile": "8856ecb40abd8069796c89133d037be04e5bdc37.opus",
+    "candidateSentences": [
+      {
+        "simplified": "我爱你。",
+        "pinyin": "Wǒ ài nǐ.",
+        "english": "I love you.",
+        "source": "tatoeba",
+        "tatoebaId": 139673
+      },
+      {
+        "simplified": "我爱你！",
+        "pinyin": "Wǒ ài nǐ!",
+        "english": "I love you!",
+        "source": "tatoeba",
+        "tatoebaId": 2385468
+      },
+      {
+        "simplified": "我可以爱。",
+        "pinyin": "Wǒ kěyǐ ài.",
+        "english": "I can love.",
+        "source": "tatoeba",
+        "tatoebaId": 463933
+      }
+    ]
+  },
+  {
+    "id": "w-0259",
+    "simplified": "一下",
+    "pinyin": "yíxià",
+    "pinyinNumbered": "yi2 xia4",
+    "definitions": [
+      "(after a verb) a bit; a little (indicating brief duration, or softening the tone, or suggesting giving sth a try)",
+      "all at once; suddenly"
+    ],
+    "hskLevel": 1,
+    "week": 3,
+    "partOfSpeech": "numeral-measure",
+    "audioFile": "c7d98a8e0537114f5e546bcfb045932cda6daa6a.opus",
+    "candidateSentences": [
+      {
+        "simplified": "帮我一下。",
+        "pinyin": "Bāng wǒ yīxià.",
+        "english": "Help me.",
+        "source": "tatoeba",
+        "tatoebaId": 332800
+      },
+      {
+        "simplified": "休息一下吧。",
+        "pinyin": "Xiūxi yíxià ba.",
+        "english": "Take a break.",
+        "source": "tatoeba",
+        "tatoebaId": 14004679
+      },
+      {
+        "simplified": "现在休息一下。",
+        "pinyin": "Xiànzài xiūxi yīxià.",
+        "english": "Now you should rest a little.",
+        "source": "tatoeba",
+        "tatoebaId": 333585
+      }
+    ]
+  },
+  {
+    "id": "w-0195",
+    "simplified": "睡觉",
+    "pinyin": "shuìjiào",
+    "pinyinNumbered": "shui4 jiao4",
+    "definitions": [
+      "to go to bed",
+      "to sleep"
+    ],
+    "hskLevel": 1,
+    "week": 3,
+    "partOfSpeech": "verb",
+    "audioFile": "5b6020937216e9d2efff6e2ecb656a119c1e1b32.opus",
+    "candidateSentences": [
+      {
+        "simplified": "他还在睡觉。",
+        "pinyin": "Tā hái zài shuìjiào.",
+        "english": "He is still in bed.",
+        "source": "tatoeba",
+        "tatoebaId": 9415195
+      },
+      {
+        "simplified": "猫在哪里睡觉？",
+        "pinyin": "Māo zài nǎlǐ shuìjiào?",
+        "english": "Where is the cat sleeping?",
+        "source": "tatoeba",
+        "tatoebaId": 2777865
+      },
+      {
+        "simplified": "我晚上睡觉很早。",
+        "pinyin": "Wǒ wǎnshang shuìjiào hěn zǎo.",
+        "english": "I go to bed early at night.",
+        "source": "tatoeba",
+        "tatoebaId": 1877244
+      }
+    ]
+  },
+  {
+    "id": "w-0289",
+    "simplified": "中国",
+    "pinyin": "Zhōngguó",
+    "pinyinNumbered": "zhong1 guo2",
+    "definitions": [
+      "China"
+    ],
+    "hskLevel": 1,
+    "week": 4,
+    "partOfSpeech": "noun",
+    "audioFile": "a65845872b472764b64bc18b8c92c72814fc30d6.opus",
+    "candidateSentences": [
+      {
+        "simplified": "我在中国。",
+        "pinyin": "Wǒ zài Zhōngguó.",
+        "english": "I'm in China.",
+        "source": "tatoeba",
+        "tatoebaId": 13575551
+      },
+      {
+        "simplified": "我喜欢中国。",
+        "pinyin": "Wǒ xǐhuan Zhōngguó.",
+        "english": "I like China.",
+        "source": "tatoeba",
+        "tatoebaId": 1333143
+      },
+      {
+        "simplified": "你喜欢中国吗？",
+        "pinyin": "Nǐ xǐhuan Zhōngguó ma?",
+        "english": "Do you like China?",
+        "source": "tatoeba",
+        "tatoebaId": 1020309
+      }
+    ]
+  },
+  {
+    "id": "w-0153",
+    "simplified": "女儿",
+    "pinyin": "nǚ’ér",
+    "pinyinNumbered": "nv3 er2",
+    "definitions": [
+      "daughter"
+    ],
+    "hskLevel": 1,
+    "week": 5,
+    "partOfSpeech": "noun",
+    "audioFile": "fffe4409d6c71f6481d81c6765c54020e0c375b7.opus",
+    "candidateSentences": [
+      {
+        "simplified": "她是我女儿。",
+        "pinyin": "Tā shì wǒ nǚ'ér.",
+        "english": "She's my daughter.",
+        "source": "tatoeba",
+        "tatoebaId": 1428124
+      },
+      {
+        "simplified": "他有两个女儿。",
+        "pinyin": "Tā yǒu liǎng gè nǚ'ér.",
+        "english": "He has two daughters.",
+        "source": "tatoeba",
+        "tatoebaId": 811296
+      },
+      {
+        "simplified": "你是我的女儿。",
+        "pinyin": "Nǐ shì wǒ de nǚ'ér.",
+        "english": "You're my daughter.",
+        "source": "tatoeba",
+        "tatoebaId": 9453432
+      }
+    ]
+  },
+  {
+    "id": "w-0261",
+    "simplified": "一点儿",
+    "pinyin": "yìdiǎnr",
+    "pinyinNumbered": "yi4 dian3 r5",
+    "definitions": [
+      "a bit; a little bit",
+      "(used in negative expressions) (not) the least bit",
+      "(after an adjective, used to form the comparative) a bit more, -er"
+    ],
+    "hskLevel": 1,
+    "week": 7,
+    "partOfSpeech": "numeral-measure",
+    "audioFile": "1a7f89e43955479f7ca2246e451b6e3605e56b19.opus",
+    "candidateSentences": [
+      {
+        "simplified": "给我一点儿。",
+        "pinyin": "Gěi wǒ yīdiǎnr.",
+        "english": "Give me a little.",
+        "source": "tatoeba",
+        "tatoebaId": 869811
+      },
+      {
+        "simplified": "我买一点儿苹果。",
+        "pinyin": "Wǒ mǎi yīdiǎnr píngguǒ.",
+        "english": "I bought some apples.",
+        "source": "tatoeba",
+        "tatoebaId": 7817196
+      },
+      {
+        "simplified": "我们喝一点儿水吧。",
+        "pinyin": "Wǒmen hē yīdiǎnr shuǐ ba.",
+        "english": "Let's drink some water.",
+        "source": "tatoeba",
+        "tatoebaId": 7817197
+      }
+    ]
+  },
+  {
+    "id": "w-0014",
+    "simplified": "不客气",
+    "pinyin": "búkèqi",
+    "pinyinNumbered": "bu2 ke4 qi5",
+    "definitions": [
+      "you're welcome",
+      "don't mention it",
+      "impolite"
+    ],
+    "hskLevel": 1,
+    "week": 8,
+    "audioFile": "e59408cb0ae16f2ce141930583dd83aac099d9ca.opus",
+    "candidateSentences": [
+      {
+        "simplified": "不客气",
+        "pinyin": "Bù kèqi",
+        "english": "Don't mention it.",
+        "source": "tatoeba",
+        "tatoebaId": 1513716
+      },
+      {
+        "simplified": "不客气。",
+        "pinyin": "Bù kèqi.",
+        "english": "You're welcome.",
+        "source": "tatoeba",
+        "tatoebaId": 700670
+      },
+      {
+        "simplified": "你要是再给我们公司出洋相，我可就不客气了。",
+        "pinyin": "Nǐ yàoshi zài gěi wǒmen gōngsī chūyángxiàng, wǒ kějiù bù kèqi le.",
+        "english": "If you make fun of our company again, we certainly won’t be polite to you.",
+        "source": "tatoeba",
+        "tatoebaId": 3709292
+      }
+    ]
+  },
+  {
+    "id": "w-0008",
+    "simplified": "包子",
+    "pinyin": "bāozi",
+    "pinyinNumbered": "bao1 zi5",
+    "definitions": [
+      "baozi; bao (steamed stuffed bun)"
+    ],
+    "hskLevel": 1,
+    "week": 8,
+    "partOfSpeech": "noun",
+    "audioFile": "577e67db31a4c70c94468938837b303354027d82.opus",
+    "candidateSentences": []
+  },
+  {
+    "id": "w-0075",
+    "simplified": "好玩儿",
+    "pinyin": "hǎowánr",
+    "pinyinNumbered": "hao3 wan2 r5",
+    "definitions": [
+      "amusing",
+      "fun",
+      "interesting"
+    ],
+    "hskLevel": 1,
+    "week": 8,
+    "partOfSpeech": "adjective",
+    "audioFile": "6b94f6341505484f077eeea37796b640a109adc3.opus",
+    "candidateSentences": [
+      {
+        "simplified": "它很好玩。",
+        "pinyin": "Tā hěn hǎowán.",
+        "english": "It was a lot of fun.",
+        "source": "tatoeba",
+        "tatoebaId": 849811
+      },
+      {
+        "simplified": "非常好玩。",
+        "pinyin": "Fēicháng hǎowán.",
+        "english": "It is very fun.",
+        "source": "tatoeba",
+        "tatoebaId": 13511636
+      },
+      {
+        "simplified": "开车很好玩。",
+        "pinyin": "Kāichē hěn hǎowán.",
+        "english": "It is a lot of fun to drive a car.",
+        "source": "tatoeba",
+        "tatoebaId": 1252405
+      }
+    ]
+  },
+  {
+    "id": "w-0332",
+    "simplified": "得",
+    "pinyin": "de",
+    "pinyinNumbered": "de5",
+    "definitions": [
+      "structural particle: used after a verb (or adjective as main verb), linking it to following phrase indicating effect, degree, possibility etc"
+    ],
+    "hskLevel": 2,
+    "week": 8,
+    "partOfSpeech": "particle",
+    "audioFile": "9ef8fa406547923333dee75b3bf7d98f8a485229.opus",
+    "candidateSentences": [
+      {
+        "simplified": "做得好！",
+        "pinyin": "Zuò de hǎo!",
+        "english": "Well done!",
+        "source": "tatoeba",
+        "tatoebaId": 4261676
+      },
+      {
+        "simplified": "你说得真快。",
+        "pinyin": "Nǐ shuōde zhēn kuài.",
+        "english": "You're talking fast.",
+        "source": "tatoeba",
+        "tatoebaId": 12216350
+      },
+      {
+        "simplified": "你走得好快啊！",
+        "pinyin": "Nǐ zǒu de hǎo kuài ā!",
+        "english": "How fast you walk!",
+        "source": "tatoeba",
+        "tatoebaId": 791699
+      }
+    ]
+  },
+  {
+    "id": "w-0357",
+    "simplified": "花",
+    "pinyin": "huā",
+    "pinyinNumbered": "hua1",
+    "definitions": [
+      "flower",
+      "blossom",
+      "fancy pattern"
+    ],
+    "hskLevel": 2,
+    "week": 9,
+    "partOfSpeech": "verb, noun",
+    "audioFile": "dc0c267e574afa27c910793a00dcd644bbcfdf04.opus",
+    "candidateSentences": [
+      {
+        "simplified": "我买了花。",
+        "pinyin": "Wǒ mǎile huā.",
+        "english": "I bought flowers.",
+        "source": "tatoeba",
+        "tatoebaId": 11508980
+      },
+      {
+        "simplified": "谢谢你的花！",
+        "pinyin": "Xièxie nǐ de huā!",
+        "english": "Thank you for the flowers!",
+        "source": "tatoeba",
+        "tatoebaId": 5624923
+      },
+      {
+        "simplified": "你花太多钱了。",
+        "pinyin": "Nǐ huā tài duō qián le.",
+        "english": "You spend too much money.",
+        "source": "tatoeba",
+        "tatoebaId": 9178001
+      }
+    ]
+  },
+  {
+    "id": "w-0314",
+    "simplified": "长",
+    "pinyin": "cháng",
+    "pinyinNumbered": "chang2",
+    "definitions": [
+      "long",
+      "(bound form) length",
+      "(bound form) strong point; forte"
+    ],
+    "hskLevel": 2,
+    "week": 9,
+    "partOfSpeech": "adjective",
+    "audioFile": "61d436b89a0940020d9c626c8e81e901cfe28efc.opus",
+    "candidateSentences": [
+      {
+        "simplified": "这个太长了。",
+        "pinyin": "Zhège tài cháng le.",
+        "english": "This is too long.",
+        "source": "tatoeba",
+        "tatoebaId": 364349
+      },
+      {
+        "simplified": "这有多长？",
+        "pinyin": "Zhè yǒu duō cháng?",
+        "english": "How long is this?",
+        "source": "tatoeba",
+        "tatoebaId": 826260
+      },
+      {
+        "simplified": "它太长了。",
+        "pinyin": "Tā tài cháng le.",
+        "english": "It's too long.",
+        "source": "tatoeba",
+        "tatoebaId": 6114449
+      }
+    ]
+  }
+]
