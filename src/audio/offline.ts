@@ -46,6 +46,7 @@ export function syncOfflineAudio(): Promise<void> {
     progress = { done: ALL_AUDIO.length - todo.length, total: ALL_AUDIO.length };
     emit();
     let failures = 0;
+    const attempts = new Map<string, number>();
     const worker = async () => {
       for (let f = todo.shift(); f && navigator.onLine; f = todo.shift()) {
         try {
@@ -55,7 +56,10 @@ export function syncOfflineAudio(): Promise<void> {
           progress.done++;
           emit();
         } catch (e) {
-          if (++failures <= 3) console.warn('audio download failed', f, e);
+          const n = (attempts.get(f) ?? 0) + 1;
+          attempts.set(f, n);
+          if (n < 3) todo.push(f); // flaky mobile networks: retry later in this run
+          else if (++failures <= 3) console.warn('audio download failed', f, e);
         }
       }
     };
