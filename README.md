@@ -18,7 +18,7 @@ Spec: [docs/PRD_HSK-Trainer.md](docs/PRD_HSK-Trainer.md). Working rules for codi
 
 ## Using it on an iPhone
 
-Open the site in Safari, tap **Share → Add to Home Screen**, and always launch from the icon. In a
+Live at **https://heyitsherman.github.io/hsk-trainer/**, rebuilt on every push to `main`. Open it in Safari, tap **Share → Add to Home Screen**, and always launch from the icon. In a
 Safari tab, iOS deletes the app's data after 7 days without a visit. The app shows a reminder in a
 tab until you install it. Export a backup from Settings now and then; it is the only guarantee that
 doesn't depend on Apple's storage policy.
@@ -102,6 +102,8 @@ spot-check, plus any sentences that fell back to Kokoro's own reading. Commit `p
 | §6 Card fields | Adds `learning_steps` | Required by ts-fsrs 5.4.2 |
 | §9.3 new cards | Recognition cards (newly activated words) take the new-card budget first; ladder-spawned cards use what's left | Without this, a simulation reached only ~340 of 500 words by week 12 |
 | §7.3 audio for "each chosen sentence" | Audio for every candidate sentence; user-written sentences use Web Speech | Sentences are chosen in the app after the audio is built |
+| §9.1 ladder: independent thresholds (audio S≥14, production S≥30) | Chained: audio ← recognition S≥14; production ← recognition S≥30 **and** audio S≥14; cloze ← production S≥14 and a sentence | With default FSRS weights a known card jumps from S≈11 to ≈46 in one review, so independent thresholds would unlock all types on the same day |
+| §3.1 Cloudflare Pages | GitHub Pages for now (`BASE_PATH=/hsk-trainer/`); Cloudflare later from the same repo with base `/` | No Cloudflare account yet; sync (task 14) waits for it |
 | §13.2 handwriting task removed | Removed. Week 2's "stroke order as a rule set" is kept as character-structure knowledge | Handwriting stays out of scope (owner's decision, 2026-10-17), even though the new HSK 2 paper does test it |
 
 ## Recalibration (PRD §16)

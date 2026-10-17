@@ -62,6 +62,10 @@ Also do not port prose from the course page (`mandarin-to-hsk-3-threshold.html`)
 - User-written sentences have empty `pinyin` (no runtime pinyin library).
 - Word → week follows the course page's module themes and per-week counts, all L1 by week 7.
 - App vocabulary = the syllabus 500 only; course words outside it (收到, 开会, 经理…) are left to lessons.
+- Card ladder is **chained** (owner decision 2026-10-17): audio ← recognition S≥14; production ← recognition
+  S≥30 and audio S≥14; cloze ← production S≥14 and a chosen sentence containing the word. Default FSRS
+  weights jump S ~11 → ~46 in one review, so independent thresholds would unlock everything at once.
+- New-card budget goes to recognition (newly activated words) first; ladder-spawned cards take the rest.
 - Audio is pre-generated for every word and every candidate sentence (curation picks sentences after the
   build). User sentences fall back to Web Speech.
 
@@ -69,4 +73,6 @@ Also do not port prose from the course page (`mandarin-to-hsk-3-threshold.html`)
 
 - One PRD §14 task at a time; meet its acceptance criteria; commit with the task number.
 - `tools/generate-audio.py` is run by the owner on their GPU. Never run it.
-- Deploy (task 13) and sync (task 14) are deferred: no Cloudflare account yet.
+- Hosting: interim GitHub Pages at https://heyitsherman.github.io/hsk-trainer/ via `.github/workflows/pages.yml`
+  (`BASE_PATH=/hsk-trainer/`). Cloudflare Pages (task 13 proper) and sync (task 14) are deferred until the
+  owner has an account; Cloudflare builds with the default base `/`.
