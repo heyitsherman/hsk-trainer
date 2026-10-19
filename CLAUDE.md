@@ -8,7 +8,7 @@ Primary device: **iPhone 16 Pro, Safari, installed to home screen.** Every UX ca
 
 ## Non-negotiables (PRD §2.1)
 
-1. Learning starts Monday 20 Oct 2026 regardless of build state. The build never becomes a reason to defer.
+1. Learning starts Monday 19 Oct 2026 regardless of build state (the PRD's "Monday 20 Oct" is a Tuesday; `startDate` is display-only, never gates). The build never becomes a reason to defer.
 2. v1 is timeboxed to one weekend. Cut scope to fit; never expand the box.
 3. Daily review queue hard-capped at **60 cards**. Behavioural, not performance. Do not "optimise" it away.
 4. Sync is **off by default** and can never block or interrupt review. Failures are silent (console + subtle Settings indicator).

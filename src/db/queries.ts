@@ -54,6 +54,10 @@ export async function activateWord(
 const DAY = 86_400_000;
 export const NEW_CARD_LOCK_DAYS = 14;
 
+/** Monday 19 Oct 2026. The PRD said "Monday 20 Oct", which is a Tuesday; installs that stored it are corrected on read. */
+export const START_DATE = '2026-10-19';
+const WRONG_START_DATE = '2026-10-20';
+
 export function defaultSettings(now: number): AppSettings {
   return {
     newCardsPerDay: 10,
@@ -61,7 +65,7 @@ export function defaultSettings(now: number): AppSettings {
     syncEnabled: false,
     syncToken: null,
     lastSyncAt: null,
-    startDate: '2026-10-20',
+    startDate: START_DATE,
     installDismissedAt: null,
     theme: 'dark',
     createdAt: now,
@@ -73,6 +77,10 @@ const strip = ({ key: _, ...settings }: SettingsRow): AppSettings => settings;
 
 export async function getSettings(db: HskDb = defaultDb, now = Date.now()): Promise<AppSettings> {
   const row = await db.settings.get('app');
+  if (row?.startDate === WRONG_START_DATE) {
+    row.startDate = START_DATE;
+    await db.settings.put(row);
+  }
   if (row) return { ...defaultSettings(row.createdAt), ...strip(row) };
   const settings = defaultSettings(now);
   await db.settings.put({ key: 'app', ...settings });

@@ -46,9 +46,15 @@ describe('dexie schema round-trips every store', () => {
 
   it('settings: defaults created once, patches persist', async () => {
     const s = await getSettings(db, 1000);
-    expect(s).toMatchObject({ newCardsPerDay: 10, dailyReviewCap: 60, syncEnabled: false, startDate: '2026-10-20', createdAt: 1000 });
+    expect(s).toMatchObject({ newCardsPerDay: 10, dailyReviewCap: 60, syncEnabled: false, startDate: '2026-10-19', createdAt: 1000 });
     await updateSettings({ theme: 'light', newCardsPerDay: 15 }, db);
     expect(await getSettings(db, 9999)).toMatchObject({ theme: 'light', newCardsPerDay: 15, createdAt: 1000 });
+  });
+
+  it('settings: the PRD\'s wrong start date (a Tuesday) is corrected on read', async () => {
+    await db.settings.put({ key: 'app', ...defaultSettings(1000), startDate: '2026-10-20' });
+    expect((await getSettings(db)).startDate).toBe('2026-10-19');
+    expect((await db.settings.get('app'))?.startDate).toBe('2026-10-19');
   });
 
   it('new-card limit is locked at 10 for the first 14 days', () => {
